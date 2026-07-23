@@ -3684,6 +3684,24 @@ LAYOUT & STRUCTURE
 SECTION
 ==================================*/
 
+.demo-video-wrapper{
+    max-width:960px;
+    margin:0 auto 60px;
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    background:rgba(255,255,255,.04);
+}
+
+.demo-video{
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:16 / 9;
+    background:#000;
+}
+
 .timeline{
 
     position:relative;
