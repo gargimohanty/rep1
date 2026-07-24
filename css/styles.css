@@ -136,6 +136,88 @@ list-style:none;
 SECTION TITLE
 ==============================*/
 
+.backstory-slide{
+    padding:120px 8%;
+}
+
+.backstory-card{
+    max-width:1200px;
+    margin:0 auto;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:30px;
+    padding:48px;
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.backstory-card h2{
+    font-size:42px;
+    font-weight:800;
+    color:white;
+    margin-bottom:10px;
+}
+
+.backstory-card h3{
+    font-size:24px;
+    font-weight:600;
+    color:var(--green);
+    margin-bottom:32px;
+}
+
+.backstory-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:24px;
+    margin-bottom:28px;
+}
+
+.backstory-block{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:22px;
+    padding:24px;
+}
+
+.backstory-block h4{
+    font-size:22px;
+    margin-bottom:14px;
+    color:white;
+}
+
+.backstory-block ul{
+    list-style:disc;
+    padding-left:20px;
+    color:#d8d8d8;
+}
+
+.backstory-block li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.backstory-quote{
+    background:linear-gradient(90deg, rgba(0,230,118,.16), rgba(255,255,255,.04));
+    border:1px solid rgba(0,230,118,.2);
+    border-radius:20px;
+    padding:24px 28px;
+}
+
+.backstory-quote p{
+    font-size:20px;
+    color:white;
+    margin:0;
+}
+
+@media(max-width:900px){
+    .backstory-grid{
+        grid-template-columns:1fr;
+    }
+
+    .backstory-card{
+        padding:32px 24px;
+    }
+}
+
 .section-title{
 
 text-align:center;
@@ -4036,11 +4118,11 @@ ARCHITECTURE SLIDE
 }
 
 .architecture-grid{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
+    display:flex;
+    flex-direction:column;
     gap:28px;
     align-items:center;
-    max-width:1200px;
+    max-width:900px;
     margin:0 auto;
 }
 
