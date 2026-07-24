@@ -3853,25 +3853,25 @@ BACKGROUND GLOW
 
 .benefits-frame{
     position:relative;
-    padding:140px 8%;
+    padding:100px 8% 90px;
     background:linear-gradient(180deg,#08111F 0%,#0C1A2C 45%,#08111F 100%);
     overflow:hidden;
 }
 
 .frame-title{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:40px;
 }
 
 .frame-title h2{
-    font-size:48px;
+    font-size:42px;
     font-weight:800;
     color:white;
-    margin-bottom:20px;
+    margin-bottom:12px;
 }
 
 .frame-title p{
-    font-size:20px;
+    font-size:18px;
     color:#bdbdbd;
     max-width:900px;
     margin:auto;
@@ -3879,20 +3879,26 @@ BACKGROUND GLOW
 
 .benefits-panels{
     display:grid;
-    grid-template-columns:1fr 0.9fr 1fr;
-    gap:40px;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
     align-items:start;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.benefits-panels.compact-table{
+    gap:28px;
 }
 
 .benefits-panel{
     background:rgba(255,255,255,.05);
     border:1px solid rgba(255,255,255,.08);
-    border-radius:30px;
+    border-radius:26px;
     box-shadow:0 25px 60px rgba(0,0,0,.25);
-    padding:35px;
+    padding:24px 26px;
     display:flex;
     flex-direction:column;
-    gap:30px;
+    gap:18px;
 }
 
 .benefits-panel.greenpack{
@@ -3926,24 +3932,23 @@ BACKGROUND GLOW
 
 .benefit-grid{
     display:grid;
-    gap:22px;
+    gap:18px;
 }
 
-.db-grid{
-    display:grid;
-    gap:22px;
+.compact-grid{
+    gap:16px;
 }
 
 .benefit-card{
     background:rgba(255,255,255,.06);
     border:1px solid rgba(255,255,255,.1);
-    border-radius:24px;
-    padding:28px;
+    border-radius:20px;
+    padding:18px 20px;
     box-shadow:0 18px 45px rgba(0,0,0,.22);
     display:flex;
     flex-direction:column;
-    gap:18px;
-    min-height:180px;
+    gap:10px;
+    min-height:120px;
 }
 
 .benefit-card .icon{
@@ -3984,8 +3989,12 @@ BACKGROUND GLOW
         padding:100px 6%;
     }
 
-    .benefit-card{
+    .benefits-panel{
         padding:24px;
+    }
+
+    .benefit-card{
+        padding:20px;
     }
 
     .benefit-card .icon{
@@ -4120,17 +4129,18 @@ ARCHITECTURE SLIDE
 .architecture-grid{
     display:flex;
     flex-direction:column;
-    gap:28px;
+    gap:36px;
     align-items:center;
-    max-width:900px;
+    max-width:1100px;
     margin:0 auto;
 }
 
 .architecture-card{
+    width:min(100%, 980px);
     background:rgba(255,255,255,.06);
     border:1px solid rgba(255,255,255,.12);
     border-radius:24px;
-    padding:16px;
+    padding:20px;
     box-shadow:0 20px 45px rgba(0,0,0,.24);
     overflow:hidden;
     transition:transform 0.3s ease, box-shadow 0.3s ease;
